@@ -1,0 +1,41 @@
+{
+  "provider": {
+    "name": "providerEndpoints"
+  },
+  "consumer": {
+    "name": "consumerService"
+  },
+  "interactions": [
+    {
+      "description": "sample request",
+      "request": {
+        "method": "GET",
+        "path": "/foo"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": [
+          {
+            "id": 1,
+            "name": "Foo"
+          },
+          {
+            "id": 2,
+            "name": "Bar"
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "3.0.0"
+    },
+    "pact-jvm": {
+      "version": "4.1.7"
+    }
+  }
+}

@@ -16,8 +16,8 @@ class ProviderHandler {
                 .ok()
                 .contentType(APPLICATION_JSON)
                 .body(Flux.just(
-                        new Foo(1l, "Alpha"),
-                        new Foo(2l, "Bravo")
+                        new Foo(1l, "Foo"),
+                        new Foo(2l, "Bar")
                 ), Foo.class);
     }
 
